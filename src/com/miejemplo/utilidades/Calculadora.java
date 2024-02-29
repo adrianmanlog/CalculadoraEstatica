@@ -12,30 +12,30 @@ public class Calculadora {
 
     public int resultado;
 
-    public int sumar(int a, int b) {
-        return a + b;
+    public int sumar(int operador1, int operador2) {
+        return operador1 + operador2;
     }
 
-    public static int restar(int a, int b) {
-        return a - b;
+    public static int restar(int operador1, int operador2) {
+        return operador1 - operador2;
     }
 
-    public static int multiplicar(int a, int b) {
-        return a * b;
+    public static int multiplicar(int operador1, int operador2) {
+        return operador1 * operador2;
     }
 
-    public static int dividir(int a, int b) {
-        if (b == 0) {
+    public static int dividir(int operador1, int operador2) {
+        if (operador2 == 0) {
             throw new ArithmeticException("División por cero");
         }
-        return a / b;
+        return operador1 / operador2;
     }
 
-    public static int modulo(int a, int b) {
-        if (b == 0) {
+    public static int modulo(int operador1, int operador2) {
+        if (operador2 == 0) {
             throw new ArithmeticException("Módulo por cero");
         }
-        return a % b;
+        return operador1 % operador2;
     }
 
     public int operacion(int a, int b, String operacion) {
