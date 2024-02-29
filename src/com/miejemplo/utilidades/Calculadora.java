@@ -57,8 +57,4 @@ public class Calculadora {
         }
         return 0;
     }
-
-    public static int operacionObsoleta(int a, int b) {
-        return a + b;
-    }
 }
