@@ -1,0 +1,2 @@
+# CalculadoraEstatica
+CalculadoraEstaticaEjercicios
