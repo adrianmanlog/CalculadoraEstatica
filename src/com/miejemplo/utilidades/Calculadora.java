@@ -8,36 +8,42 @@ package com.miejemplo.utilidades;
  *
  * @author usuario
  */
-public class Calculadora {
+public class Calculadora implements InterfaceCalculadora {
 
     public int resultado;
 
+    @Override
     public int sumar(int operador1, int operador2) {
         return operador1 + operador2;
     }
 
-    public static int restar(int operador1, int operador2) {
+    @Override
+    public int restar(int operador1, int operador2) {
         return operador1 - operador2;
     }
 
-    public static int multiplicar(int operador1, int operador2) {
+    @Override
+    public int multiplicar(int operador1, int operador2) {
         return operador1 * operador2;
     }
 
-    public static int dividir(int operador1, int operador2) {
+    @Override
+    public int dividir(int operador1, int operador2) {
         if (operador2 == 0) {
             throw new ArithmeticException("División por cero");
         }
         return operador1 / operador2;
     }
 
-    public static int modulo(int operador1, int operador2) {
+    @Override
+    public int modulo(int operador1, int operador2) {
         if (operador2 == 0) {
             throw new ArithmeticException("Módulo por cero");
         }
         return operador1 % operador2;
     }
 
+    @Override
     public int operacion(int a, int b, String operacion) {
         if (null != operacion) {
             switch (operacion) {
